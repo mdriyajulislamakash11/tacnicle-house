@@ -5,7 +5,7 @@ const Categories = ({ categories }) => {
     return (
         <div role="tablist" className="tabs tabs-boxed justify-start items-start">
 
-            <div className="flex flex-col  w-48 p-5 border border-red-600">
+            <div className="flex flex-col  w-56 p-5 border ">
                 {
                     categories.map(category => <NavLink
                         to={`/category/${category.categories}`}

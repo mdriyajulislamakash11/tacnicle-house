@@ -1,7 +1,7 @@
+/* eslint-disable react/prop-types */
 
 
 const Card = ({ product }) => {
-    console.log(product)
     const { product_title, product_image, price } = product;
 
     return (

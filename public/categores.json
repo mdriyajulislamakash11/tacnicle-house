@@ -28,12 +28,5 @@
         "id": 6,
         "categories": "MacBook",
         "slug": "macbook"
-    },
-    {
-        "id": 7,
-        "categories": "Iphone",
-        "slug": "iphone"
     }
 ]
-
-

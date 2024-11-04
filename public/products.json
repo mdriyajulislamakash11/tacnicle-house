@@ -1,42 +1,8 @@
 [
     {
-        "product_id": "P001",
-        "product_title": "Apple iPhone 15 Pro Max",
-        "product_image": "https://i.ibb.co/fvLHvn7/elegant-smartphone-composition.jpg",
-        "category": "Smartphones",
-        "price": 1299,
-        "description": "Experience the ultimate smartphone with the iPhone 15 Pro Max.",
-        "specification": [
-            "6.7-inch Super Retina XDR display",
-            "A17 Bionic chip",
-            "Triple-camera system (48MP Main, 12MP Telephoto, 12MP Ultrawide)",
-            "LiDAR Scanner",
-            "Up to 2TB storage"
-        ],
-        "availability": true,
-        "rating": 4.8
-    },
-    {
-        "product_id": "P002",
-        "product_title": "Samsung Galaxy S23 Ultra",
-        "product_image": "https://i.ibb.co/jrCs1Lv/Samsung-Galaxy-S23-Ultra.jpg",
-        "category": "Smartphones",
-        "price": 1199,
-        "description": "High-end Android smartphone with powerful camera and performance.",
-        "specification": [
-            "6.8-inch Dynamic AMOLED display",
-            "Snapdragon 8 Gen 2",
-            "Quad-camera system (200MP Main, 12MP Ultra-wide, 10MP Periscope)",
-            "5000mAh battery",
-            "Up to 1TB storage"
-        ],
-        "availability": true,
-        "rating": 4.7
-    },
-    {
-        "product_id": "P003",
+        "product_id": 1,
         "product_title": "Dell XPS 15",
-        "product_image": "https://i.ibb.co/PrmWqbb/Dell-XPS-15.jpg",
+        "product_image": "https://i.ibb.co.com/ZzGtqdF/ddd.jpg",
         "category": "Laptops",
         "price": 1799,
         "description": "High-performance laptop perfect for professional use and content creation.",
@@ -51,207 +17,286 @@
         "rating": 4.5
     },
     {
-        "product_id": "P004",
-        "product_title": "MacBook Pro 16\" M2",
+        "product_id": 2,
+        "product_title": "Apple MacBook Pro 16",
+        "product_image": "https://i.ibb.co.com/ZzGtqdF/ddd.jpg",
+        "category": "Laptops",
+        "price": 2499,
+        "description": "Powerful laptop with Apple's M1 Max chip, designed for high-end computing tasks.",
+        "specification": [
+            "16-inch Retina display",
+            "Apple M1 Max",
+            "32GB RAM",
+            "1TB SSD"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": 3,
+        "product_title": "HP Spectre x360",
+        "product_image": "https://i.ibb.co.com/ZzGtqdF/ddd.jpg",
+        "category": "Laptops",
+        "price": 1599,
+        "description": "Premium 2-in-1 laptop with a stylish design, perfect for productivity and entertainment.",
+        "specification": [
+            "13.3-inch FHD touchscreen",
+            "Intel Core i7",
+            "16GB RAM",
+            "512GB SSD"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": 4,
+        "product_title": "Lenovo ThinkPad X1 Carbon",
+        "product_image": "https://i.ibb.co.com/ZzGtqdF/ddd.jpg",
+        "category": "Laptops",
+        "price": 1399,
+        "description": "Lightweight business laptop with excellent durability and performance.",
+        "specification": [
+            "14-inch FHD display",
+            "Intel Core i7",
+            "16GB RAM",
+            "512GB SSD"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": 5,
+        "product_title": "Asus ROG Zephyrus G14",
+        "product_image": "https://i.ibb.co.com/ZzGtqdF/ddd.jpg",
+        "category": "Laptops",
+        "price": 1499,
+        "description": "Compact gaming laptop with powerful hardware and impressive battery life.",
+        "specification": [
+            "14-inch QHD display",
+            "AMD Ryzen 9",
+            "NVIDIA GeForce RTX 3060",
+            "16GB RAM",
+            "1TB SSD"
+        ],
+        "availability": true,
+        "rating": 4.4
+    },
+    {
+        "product_id": 6,
+        "product_title": "Microsoft Surface Laptop 4",
+        "product_image": "https://i.ibb.co.com/ZzGtqdF/ddd.jpg",
+        "category": "Laptops",
+        "price": 1299,
+        "description": "Sleek and portable laptop with excellent performance and a high-resolution display.",
+        "specification": [
+            "13.5-inch PixelSense display",
+            "Intel Core i7",
+            "16GB RAM",
+            "512GB SSD"
+        ],
+        "availability": true,
+        "rating": 4.3
+    },
+    {
+        "product_id": 7,
+        "product_title": "Acer Predator Helios 300",
+        "product_image": "https://i.ibb.co.com/ZzGtqdF/ddd.jpg",
+        "category": "Laptops",
+        "price": 1299,
+        "description": "Gaming laptop with powerful graphics and excellent cooling for extended sessions.",
+        "specification": [
+            "15.6-inch FHD display",
+            "Intel Core i7",
+            "NVIDIA GeForce RTX 3060",
+            "16GB RAM",
+            "512GB SSD"
+        ],
+        "availability": true,
+        "rating": 4.2
+    },
+    {
+        "product_id": 8,
+        "product_title": "Razer Blade 15",
+        "product_image": "https://i.ibb.co.com/ZzGtqdF/ddd.jpg",
+        "category": "Laptops",
+        "price": 1999,
+        "description": "Premium gaming laptop with a slim profile and high-end specs.",
+        "specification": [
+            "15.6-inch FHD display",
+            "Intel Core i7",
+            "NVIDIA GeForce RTX 3070",
+            "16GB RAM",
+            "1TB SSD"
+        ],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": 9,
+        "product_title": "Samsung Galaxy S21 Ultra",
+        "product_image": "https://i.ibb.co/fvLHvn7/elegant-smartphone-composition.jpg",
+        "category": "Phones",
+        "price": 1199,
+        "description": "Flagship smartphone with a powerful camera and high-resolution display.",
+        "specification": [
+            "6.8-inch QHD+ Dynamic AMOLED",
+            "Exynos 2100 / Snapdragon 888",
+            "12GB RAM",
+            "128GB Storage",
+            "5000mAh Battery"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": 10,
+        "product_title": "iPhone 13 Pro Max",
+        "product_image": "https://i.ibb.co/fvLHvn7/elegant-smartphone-composition.jpg",
+        "category": "Phones",
+        "price": 1099,
+        "description": "Premium smartphone with advanced camera features and a powerful A15 Bionic chip.",
+        "specification": [
+            "6.7-inch Super Retina XDR display",
+            "A15 Bionic Chip",
+            "6GB RAM",
+            "128GB Storage",
+            "4352mAh Battery"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": 11,
+        "product_title": "Google Pixel 6 Pro",
+        "product_image": "https://i.ibb.co/fvLHvn7/elegant-smartphone-composition.jpg",
+        "category": "Phones",
+        "price": 899,
+        "description": "Google's flagship phone with excellent photo capabilities and Android integration.",
+        "specification": [
+            "6.71-inch LTPO OLED",
+            "Google Tensor",
+            "12GB RAM",
+            "128GB Storage",
+            "5003mAh Battery"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": 12,
+        "product_title": "Wireless Earbuds",
+        "product_image": "https://i.ibb.co.com/P6wNMxV/sdfsdfs.jpg",
+        "category": "Accessories",
+        "price": 99,
+        "description": "High-quality wireless earbuds with noise cancellation and long battery life.",
+        "specification": [
+            "Bluetooth 5.2",
+            "Active Noise Cancellation",
+            "Up to 24 hours of playtime with case",
+            "IPX4 Water Resistance"
+        ],
+        "availability": true,
+        "rating": 4.4
+    },
+    {
+        "product_id": 13,
+        "product_title": "Smart Watch Charger",
+        "product_image": "https://i.ibb.co.com/P6wNMxV/sdfsdfs.jpg",
+        "category": "Accessories",
+        "price": 29,
+        "description": "Fast charging dock for smart watches, compatible with various models.",
+        "specification": [
+            "Magnetic charging base",
+            "USB Type-C connection",
+            "Overheat protection",
+            "Compact design for travel"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": 14,
+        "product_title": "Portable Power Bank",
+        "product_image": "https://i.ibb.co.com/P6wNMxV/sdfsdfs.jpg",
+        "category": "Accessories",
+        "price": 49,
+        "description": "Compact and lightweight power bank with fast charging support for mobile devices.",
+        "specification": [
+            "10,000mAh capacity",
+            "USB-A and USB-C output",
+            "Supports 18W fast charging",
+            "LED battery level indicator"
+        ],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": 15,
+        "product_title": "MacBook Pro 16-inch M2",
         "product_image": "https://i.ibb.co/Pjh5WCX/Mac-Book-Pro-16-M2.jpg",
         "category": "MacBook",
         "price": 2499,
-        "description": "Apple's powerful MacBook Pro with the M2 chip, ideal for creatives.",
+        "description": "Powerful MacBook Pro featuring Apple's M2 chip for exceptional performance.",
         "specification": [
             "16-inch Liquid Retina XDR display",
-            "M2 Max chip",
-            "32GB unified memory",
-            "1TB SSD",
+            "Apple M2 chip",
+            "16GB RAM",
+            "512GB SSD",
             "Up to 21 hours battery life"
         ],
         "availability": true,
         "rating": 4.9
     },
     {
-        "product_id": "P005",
-        "product_title": "Apple Watch Series 9",
-        "product_image": "https://i.ibb.co/vVPdvRh/Apple-Watch-Series-9.jpg",
-        "category": "Smart Watches",
-        "price": 399,
-        "description": "Apple's latest smartwatch with health and fitness tracking.",
+        "product_id": 16,
+        "product_title": "MacBook Air M2",
+        "product_image": "https://i.ibb.co/Pjh5WCX/Mac-Book-Pro-16-M2.jpg",
+        "category": "MacBook",
+        "price": 999,
+        "description": "Lightweight MacBook Air with the M2 chip, ideal for everyday use.",
         "specification": [
-            "Always-On Retina display",
-            "Blood oxygen and ECG apps",
-            "Up to 18 hours battery life",
-            "Water-resistant to 50 meters",
-            "Fitness and activity tracking"
+            "13.6-inch Retina display",
+            "Apple M2 chip",
+            "8GB RAM",
+            "256GB SSD",
+            "Up to 18 hours battery life"
         ],
         "availability": true,
-        "rating": 4.6
+        "rating": 4.8
     },
     {
-        "product_id": "P006",
+        "product_id": 17,
         "product_title": "Samsung Galaxy Watch 6",
         "product_image": "https://i.ibb.co/wB61Fnw/Samsung-Galaxy-Watch-6.jpg",
         "category": "Smart Watches",
-        "price": 349,
-        "description": "Advanced health and fitness features in a premium design.",
+        "price": 299,
+        "description": "Stylish smart watch with advanced health tracking and customizable features.",
         "specification": [
-            "1.4-inch Super AMOLED display",
-            "BioActive Sensor",
-            "Sleep tracking and ECG",
-            "5ATM water resistance",
-            "Compatible with Android and iOS"
+            "1.5-inch Super AMOLED display",
+            "Bluetooth and Wi-Fi connectivity",
+            "Heart rate and ECG monitoring",
+            "Sleep tracking",
+            "Up to 40 hours battery life"
         ],
         "availability": true,
-        "rating": 4.4
+        "rating": 4.6
     },
     {
-        "product_id": "P007",
-        "product_title": "Sony WH-1000XM5",
-        "product_image": "https://i.ibb.co/9Zcqr61/Sony-WH-1000-XM5.jpg",
-        "category": "Accessories",
+        "product_id": 18,
+        "product_title": "Apple Watch Series 8",
+        "product_image": "https://i.ibb.co/wB61Fnw/Samsung-Galaxy-Watch-6.jpg",
+        "category": "Smart Watches",
         "price": 399,
-        "description": "Noise-canceling over-ear headphones with exceptional sound quality.",
+        "description": "Feature-rich smart watch with fitness tracking and seamless iOS integration.",
         "specification": [
-            "30 hours battery life",
-            "Adaptive Sound Control",
-            "Touch control interface",
-            "Hi-Res Audio compatible",
-            "Quick charge support"
+            "Always-On Retina display",
+            "GPS and cellular options",
+            "Blood oxygen and ECG monitoring",
+            "Fitness and health tracking",
+            "Up to 18 hours battery life"
         ],
         "availability": true,
-        "rating": 4.8
-    },
-    {
-        "product_id": "P008",
-        "product_title": "Apple AirPods Pro 2nd Gen",
-        "product_image": "https://i.ibb.co/PWTBzCL/Apple-Air-Pods-Pro-2nd-Gen.jpg",
-        "category": "Accessories",
-        "price": 249,
-        "description": "Apple's latest wireless earbuds with active noise cancellation.",
-        "specification": [
-            "Active Noise Cancellation",
-            "Adaptive Transparency",
-            "Personalized Spatial Audio",
-            "H2 chip",
-            "Up to 6 hours of listening time"
-        ],
-        "availability": true,
-        "rating": 4.7
-    },
-    {
-        "product_id": "P009",
-        "product_title": "Microsoft Surface Laptop 5",
-        "product_image": "https://i.ibb.co/0sj5y2h/Microsoft-Surface-Laptop-5.png",
-        "category": "Laptops",
-        "price": 1499,
-        "description": "Sleek design with a powerful performance, perfect for productivity.",
-        "specification": [
-            "13.5-inch PixelSense touchscreen",
-            "Intel Core i7",
-            "16GB RAM",
-            "512GB SSD",
-            "Windows 11"
-        ],
-        "availability": true,
-        "rating": 4.4
-    },
-    {
-        "product_id": "P010",
-        "product_title": "Google Pixel 8 Pro",
-        "product_image": "https://i.ibb.co/VgYnP2j/Google-Pixel-8-Pro.jpg",
-        "category": "Smartphones",
-        "price": 999,
-        "description": "Google's flagship phone with top-tier AI capabilities.",
-        "specification": [
-            "6.7-inch LTPO OLED display",
-            "Google Tensor G3",
-            "50MP wide, 12MP ultrawide, 48MP telephoto",
-            "5G support",
-            "5000mAh battery"
-        ],
-        "availability": true,
-        "rating": 4.6
-    },
-    {
-        "product_id": "P011",
-        "product_title": "Sony PlayStation 5",
-        "product_image": "https://i.ibb.co/2NmchhM/Sony-Play-Station-5.jpg",
-        "category": "Gaming Consoles",
-        "price": 499,
-        "description": "Next-gen gaming console with high performance and stunning graphics.",
-        "specification": [
-            "8K graphics support",
-            "825GB SSD",
-            "DualSense controller",
-            "4K Blu-ray drive",
-            "Ray tracing"
-        ],
-        "availability": true,
-        "rating": 4.9
-    },
-    {
-        "product_id": "P012",
-        "product_title": "Apple MacBook Air M2",
-        "product_image": "https://i.ibb.co/Xx31mgr/Apple-Mac-Book-Air-M2.jpg",
-        "category": "MacBook",
-        "price": 1199,
-        "description": "Ultra-thin laptop with exceptional performance and battery life.",
-        "specification": [
-            "13.6-inch Liquid Retina display",
-            "M2 chip",
-            "18 hours battery life",
-            "256GB SSD",
-            "Fanless design"
-        ],
-        "availability": true,
-        "rating": 4.8
-    },
-    {
-        "product_id": "P013",
-        "product_title": "ASUS ROG Zephyrus G15",
-        "product_image": "https://i.ibb.co/JB9THZ6/ASUS-ROG-Zephyrus-G15.jpg",
-        "category": "Laptops",
-        "price": 1899,
-        "description": "High-performance gaming laptop with a sleek design.",
-        "specification": [
-            "15.6-inch QHD display",
-            "AMD Ryzen 9",
-            "NVIDIA RTX 3080",
-            "32GB RAM",
-            "1TB SSD"
-        ],
-        "availability": true,
-        "rating": 4.7
-    },
-    {
-        "product_id": "P014",
-        "product_title": "Apple iPad Pro 12.9\"",
-        "product_image": "https://i.ibb.co/dJhXctd/Apple-i-Pad-Pro-12-9.jpg",
-        "category": "Tablets",
-        "price": 1099,
-        "description": "Apple's powerful tablet for productivity and creativity.",
-        "specification": [
-            "12.9-inch Liquid Retina XDR display",
-            "M2 chip",
-            "Apple Pencil support",
-            "5G capable",
-            "Up to 2TB storage"
-        ],
-        "availability": true,
-        "rating": 4.9
-    },
-    {
-        "product_id": "P015",
-        "product_title": "Samsung Galaxy Tab S9 Ultra",
-        "product_image": "https://i.ibb.co.com/XL839NV/Samsung-Galaxy-Tab-S9-Ultra.jpg",
-        "category": "Tablets",
-        "price": 899,
-        "description": "Premium Android tablet with powerful performance and display.",
-        "specification": [
-            "14.6-inch Super AMOLED display",
-            "Snapdragon 8 Gen 2",
-            "5G support",
-            "S Pen included",
-            "Up to 512GB storage"
-        ],
-        "availability": true,
-        "rating": 4.6
+        "rating":4.8
+
     }
 ]
