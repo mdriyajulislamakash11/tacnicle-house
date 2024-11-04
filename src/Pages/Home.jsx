@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { Outlet, useLoaderData } from "react-router-dom";
 import Banner from "../components/Banner";
 import Heading from "../components/Heading";
 import Categories from "../components/Categories";
@@ -8,8 +8,6 @@ const Home = () => {
 
     const categories = useLoaderData();
 
-    console.log(categories)
-
     return (
         <div>
             {/* Banner */}
@@ -17,7 +15,10 @@ const Home = () => {
             {/* headng */}
             <Heading />
             {/* Categoies tab secton */}
-            <Categories categories={categories}/>
+            <div className="flex justify-between w-10/12 mx-auto">
+                <Categories categories={categories} />
+                <Outlet />
+            </div>
             {/* dynamc nasted Comppents */}
         </div>
     );
