@@ -9,13 +9,16 @@ const Categories = ({ categories }) => {
                 {
                     categories.map(category => <NavLink
                         to={`/category/${category.categories}`}
-                        className='btn btn-outline btn-success rounded-full my-3'
                         key={category.id}
-                    >{category.categories}
+                        className={({ isActive }) =>
+                            `tab btn btn-outline my-3 ${isActive ? 'tab-active' : ''}`
+                          }
+                    >
+                        {category.categories}
                     </NavLink>)
                 }
             </div>
-
+            
         </div>
 
     );
