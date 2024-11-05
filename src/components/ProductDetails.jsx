@@ -4,6 +4,7 @@
 import { FaRegHeart } from "react-icons/fa";
 import { RiShoppingCart2Line } from "react-icons/ri";
 import { useLoaderData, useParams } from "react-router-dom";
+import { addToStoredProductList } from "../utility/addToLS";
 
 const ProductDetails = () => {
     const { productId } = useParams();
@@ -12,6 +13,10 @@ const ProductDetails = () => {
     const product = data.find(product => product.product_id == productId);
 
     console.log(product);
+
+        const handeAddToCard = (id) => {
+            addToStoredProductList(id);
+        }
 
     return (
         <div className="min-h-[394px] bg-[#9538E2] rounded-3xl  relative mb-96">
@@ -56,7 +61,9 @@ const ProductDetails = () => {
                                     <p>{product.rating}</p>
                                 </div>
                                 <div>
-                                <button className="my-4 btn rounded-full bg-[#9538E2] text-lg  text-white">Add To Card <RiShoppingCart2Line /> </button>
+                                <button
+                                onClick={() => handeAddToCard(productId)}
+                                className="my-4 btn rounded-full bg-[#9538E2] text-lg  text-white">Add To Card <RiShoppingCart2Line /></button>
                                 <button className="btn text-lg rounded-full ml-4 btn-outline"><FaRegHeart /> </button>
                                 </div>
                             </div>
