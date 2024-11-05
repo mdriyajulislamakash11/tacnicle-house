@@ -4,7 +4,7 @@
 import { FaRegHeart } from "react-icons/fa";
 import { RiShoppingCart2Line } from "react-icons/ri";
 import { useLoaderData, useParams } from "react-router-dom";
-import { addToStoredProductList } from "../utility/addToLS";
+import { addToStoredProductList, addToStoredProductWishList } from "../utility/addToLS";
 
 const ProductDetails = () => {
     const { productId } = useParams();
@@ -14,9 +14,13 @@ const ProductDetails = () => {
 
     console.log(product);
 
-        const handeAddToCard = (id) => {
-            addToStoredProductList(id);
-        }
+    const handeAddToCard = (id) => {
+        addToStoredProductList(id);
+    }
+
+    const handleAddWishLst = (id) => {
+        addToStoredProductWishList(id)
+    }
 
     return (
         <div className="min-h-[394px] bg-[#9538E2] rounded-3xl  relative mb-96">
@@ -61,10 +65,13 @@ const ProductDetails = () => {
                                     <p>{product.rating}</p>
                                 </div>
                                 <div>
-                                <button
-                                onClick={() => handeAddToCard(productId)}
-                                className="my-4 btn rounded-full bg-[#9538E2] text-lg  text-white">Add To Card <RiShoppingCart2Line /></button>
-                                <button className="btn text-lg rounded-full ml-4 btn-outline"><FaRegHeart /> </button>
+                                    <button
+                                        onClick={() => handeAddToCard(productId)}
+                                        className="my-4 btn rounded-full bg-[#9538E2] text-lg  text-white">Add To Card <RiShoppingCart2Line /></button>
+
+                                    <button
+                                        onClick={() => handleAddWishLst(productId)}
+                                        className="btn text-lg rounded-full ml-4 btn-outline"><FaRegHeart /> </button>
                                 </div>
                             </div>
                         </div>
