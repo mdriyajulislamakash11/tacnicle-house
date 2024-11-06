@@ -1,5 +1,5 @@
 
-import { NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { RiShoppingCart2Line } from "react-icons/ri";
 import { FaRegHeart } from "react-icons/fa";
 import { useState } from "react";
@@ -65,28 +65,28 @@ const Navbar = () => {
        </li>
       </ul>
      </div>
-     <a className="btn btn-ghost text-xl">Gadget Heaven</a>
+     <Link to='/' className="btn btn-ghost text-xl">Gadget Heaven</Link>
     </div>
     <div className="navbar-center hidden lg:flex">
      <ul className="menu menu-horizontal px-1 gap-12 text-xl font-normal">
       <li>
-       <NavLink to="/" className={({ isActive }) => isActive ? 'active btn btn-primary' : ''}>
+       <NavLink to="/" className={({ isActive }) => isActive ? 'active btn bg-purple-700 text-white' : ''}>
         Home
        </NavLink>
       </li>
       <li>
-       <NavLink to="/statistics" className={({ isActive }) => isActive ? 'active btn btn-primary' : ''}>
+       <NavLink to="/statistics" className={({ isActive }) => isActive ? 'active btn bg-purple-600 text-white' : ''}>
         Statistics
        </NavLink>
       </li>
       <li>
-       <NavLink to="/dashboard" className={({ isActive }) => isActive ? 'active btn btn-primary' : ''}>
+       <NavLink to="/dashboard" className={({ isActive }) => isActive ? 'active btn bg-purple-600 text-white' : ''}>
         Dashboard
        </NavLink>
       </li>
 
       <li>
-       <NavLink to="/reviwe" className={({ isActive }) => isActive ? 'active btn btn-primary' : ''}>
+       <NavLink to="/reviwe" className={({ isActive }) => isActive ? 'active btn  bg-purple-600 text-white' : ''}>
         Review
        </NavLink>
       </li>

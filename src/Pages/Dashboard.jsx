@@ -1,17 +1,17 @@
 
 import { useState, useEffect } from 'react';
 import { useLoaderData } from 'react-router-dom';
-import { getStoredProductList } from '../utility/addToLS';
+import { getStoredProductList, getStoredProductWishList } from '../utility/addToLS';
 import Cart from '../components/Cart';
 import WishList from '../components/WishList';
 import toast from 'react-hot-toast';
-import SuccessModal from '../components/SuccessModal'; 
+import SuccessModal from '../components/SuccessModal';
 
 const Dashboard = () => {
     const [activeTab, setActiveTab] = useState("cart");
     const [productList, setProductList] = useState([]);
     const [totalCost, setTotalCost] = useState(0);
-    const [showModal, setShowModal] = useState(false); 
+    const [showModal, setShowModal] = useState(false);
     const allProduct = useLoaderData();
 
     useEffect(() => {
@@ -22,6 +22,22 @@ const Dashboard = () => {
         setProductList(prdList);
         calculateTotalCost(prdList);
     }, [allProduct]);
+
+
+    const [wishList, setWislist] = useState()
+    
+    useEffect(() => {
+        const getWishlistFromLS = getStoredProductWishList()
+        // console.log(getWishlistFromLS)
+        const storedProductInt = getWishlistFromLS.map(id => parseInt(id));
+        const filteredWishlist = [...allProduct].filter(product => storedProductInt.includes(product.product_id))
+        console.log(filteredWishlist)
+        setWislist(filteredWishlist)
+        calculateTotalCost(filteredWishlist);
+    }, [allProduct])
+
+
+
 
     const calculateTotalCost = (products) => {
         const total = products.reduce((acc, product) => acc + product.price, 0);
@@ -41,12 +57,18 @@ const Dashboard = () => {
     };
 
     const handlePurchase = () => {
-        setShowModal(true); 
+        setShowModal(true);
     };
 
     const closeModal = () => {
-        setShowModal(false); 
+        setShowModal(false);
     };
+
+
+
+
+
+
 
     return (
         <div className="py-8">
@@ -55,18 +77,27 @@ const Dashboard = () => {
                 <p className="text-white mb-6">
                     Explore the latest gadgets that will take your experience to the next level. From smart devices to <br /> the coolest accessories, we have it all!
                 </p>
+
+
                 <button
                     onClick={() => setActiveTab("cart")}
-                    className={`text-white mr-4 btn btn-outline font-medium text-lg rounded-full px-16 ${activeTab === "cart" ? "bg-white text-[#1c0b2c]" : ""}`}
+                    className={`mr-4 btn btn-outline font-medium text-lg rounded-full px-16 
+                    ${activeTab === "cart" ? "text-purple-700 bg-white" : "text-white"}`}
                 >
                     Cart
                 </button>
+
                 <button
                     onClick={() => setActiveTab("wishlist")}
-                    className={`text-white btn btn-outline font-medium text-lg rounded-full px-16 mb-10 ${activeTab === "wishlist" ? "bg-white text-[#270f3d]" : ""}`}
+                    className={`text-white btn btn-outline font-medium text-lg rounded-full px-16 mb-10 
+                    ${activeTab === "wishlist" ? "text-purple-900 bg-white" : ""}`}
                 >
                     Wishlist
                 </button>
+
+
+
+
             </div>
 
             <div className="text-center mt-8 bg-white p-6 rounded-lg mx-4">
@@ -77,13 +108,13 @@ const Dashboard = () => {
                             <div className="flex justify-between items-center">
                                 <h2 className="text-2xl font-bold">Total cost: ${totalCost.toFixed(2)}</h2>
                                 <div>
-                                    <button 
+                                    <button
                                         onClick={sortByPrice}
                                         className="btn btn-outline text-lg px-8 font-bold rounded-full mx-4 text-[#9538E2]"
                                     >
                                         Sort by Price
                                     </button>
-                                    <button 
+                                    <button
                                         onClick={handlePurchase}
                                         className="btn btn-outline text-lg font-bold rounded-full px-8 text-white bg-[#9538E2]"
                                     >
@@ -107,7 +138,7 @@ const Dashboard = () => {
                 {activeTab === "wishlist" && (
                     <div>
                         <div className="">
-                            {productList.map((product) => (
+                            {wishList.map((product) => (
                                 <WishList
                                     key={product.product_id}
                                     product={product}
@@ -119,7 +150,7 @@ const Dashboard = () => {
                 )}
             </div>
 
-            {/* Success Modal */}
+
             <SuccessModal showModal={showModal} closeModal={closeModal} />
         </div>
     );

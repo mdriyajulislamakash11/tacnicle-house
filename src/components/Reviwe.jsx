@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import toast from "react-hot-toast";
 import { FaStar } from "react-icons/fa";
 
@@ -72,7 +72,7 @@ const Review = () => {
                         ))}
                     </div>
 
-                    <button type="submit" className="btn btn-primary w-full">
+                    <button type="submit" className="btn bg-purple-500 text-white w-full text-lg font-bold ">
                         Submit Review
                     </button>
                 </form>
