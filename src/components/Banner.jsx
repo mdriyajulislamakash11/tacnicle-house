@@ -2,7 +2,7 @@ import banner from '../assets/banner.jpg';
 
 const Banner = () => {
     return (
-        <div className="min-h-[694px] bg-[#9538E2] rounded-3xl text-center relative mb-96">
+        <div className="min-h-[694px] rounded-b-xl bg-purple-600 text-center relative mb-96">
             <div className="w-10/12 mx-auto pt-36 pb-7">
                 <h1 className="mb-6 text-6xl text-white font-medium">Upgrade Your Tech Accessorize with <br />Gadget Heaven Accessories</h1>
                 <p className="mb-8 text-white">Explore the latest gadgets that will take your experience to the next level. From smart devices to <br /> the coolest accessories, we have it all!</p>

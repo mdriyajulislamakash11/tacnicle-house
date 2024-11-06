@@ -296,54 +296,6 @@
         "rating": 4.7
     },
     {
-        "product_id": 19,
-        "product_title": "Apple Watch Series 8",
-        "product_image": "https://i.ibb.co/Q9hGJ8z/Apple-Watch-Series-8.jpg",
-        "category": "Smart Watches",
-        "price": 399,
-        "description": "Advanced smartwatch with health tracking features, ECG, and blood oxygen monitoring.",
-        "specification": [
-            "Always-On Retina display",
-            "Blood Oxygen and ECG apps",
-            "Water-resistant to 50 meters",
-            "18-hour battery life"
-        ],
-        "availability": true,
-        "rating": 4.8
-    },
-    {
-        "product_id": 20,
-        "product_title": "Samsung Galaxy Watch 5",
-        "product_image": "https://i.ibb.co/cxVZGZm/Samsung-Galaxy-Watch-5.jpg",
-        "category": "Smart Watches",
-        "price": 299,
-        "description": "Stylish smartwatch with health tracking, sleep monitoring, and long battery life.",
-        "specification": [
-            "1.4-inch AMOLED display",
-            "BioActive Sensor for health monitoring",
-            "IP68 water resistance",
-            "Up to 40-hour battery life"
-        ],
-        "availability": true,
-        "rating": 4.6
-    },
-    {
-        "product_id": 21,
-        "product_title": "Fitbit Versa 4",
-        "product_image": "https://i.ibb.co/7bp9DbF/Fitbit-Versa-4.jpg",
-        "category": "Smart Watches",
-        "price": 229,
-        "description": "Fitness-focused smartwatch with GPS tracking and 24/7 heart rate monitoring.",
-        "specification": [
-            "1.58-inch AMOLED display",
-            "Built-in GPS",
-            "Water-resistant to 50 meters",
-            "Up to 6 days of battery life"
-        ],
-        "availability": true,
-        "rating": 4.5
-    },
-    {
         "product_id": 22,
         "product_title": "MacBook Pro 16-inch M2",
         "product_image": "https://i.ibb.co/0XZzR6X/Mac-Book-Pro-16-inch-M2.jpg",

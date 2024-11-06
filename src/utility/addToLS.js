@@ -31,11 +31,11 @@ const addToStoredProductWishList = (id) => {
     const storedWishList = getStoredProductWishList();
 
     if (storedWishList.includes(id)) {
-        alert('This product is already in your wishlist.');
+        toast.error('This product is already in your wishlist.');
     } else {
         storedWishList.push(id);
         localStorage.setItem('wish-list', JSON.stringify(storedWishList));
-        alert('Product added to your wishlist!');
+        toast.success('Product added to your wishlist!');
     }
 };
 

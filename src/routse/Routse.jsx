@@ -6,6 +6,7 @@ import Dashboard from "../Pages/Dashboard"
 import Statistics from "../Pages/Statistics"
 import ProductCards from "../components/ProductCards"
 import ProductDetails from "../components/ProductDetails"
+import Review from "../components/Reviwe"
  
 
 const routes = createBrowserRouter([
@@ -39,6 +40,10 @@ const routes = createBrowserRouter([
             path: '/dashboard',
             element: <Dashboard>Dashboard</Dashboard>,
             loader: () => fetch('../products.json')
+        },
+        {
+            path: '/reviwe',
+            element: <Review />
         },
         {
             path: '/product/:productId',

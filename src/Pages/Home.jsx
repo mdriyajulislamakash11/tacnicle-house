@@ -1,4 +1,4 @@
-import { Outlet, useLoaderData } from "react-router-dom";
+import { Link, Outlet, useLoaderData } from "react-router-dom";
 import Banner from "../components/Banner";
 import Heading from "../components/Heading";
 import Categories from "../components/Categories";
@@ -11,11 +11,17 @@ const Home = () => {
     return (
         <div>
             {/* Banner */}
-            <Banner />
-            {/* headng */}
-            <Heading />
+            <div className="w-11/12 mx-auto rounded-b-2xl" >
+                <div className="">
+                    <Banner />
+                </div>
+                {/* headng */}
+                <div>
+                    <Heading />
+                </div>
+            </div>
             {/* Categoies tab secton */}
-            <div className="flex justify-between w-10/12 mx-auto">
+            <div className="flex w-10/12 mx-auto">
                 <Categories categories={categories} />
                 <Outlet />
             </div>
