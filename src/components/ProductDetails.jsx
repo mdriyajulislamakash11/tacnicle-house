@@ -5,14 +5,20 @@ import { FaRegHeart } from "react-icons/fa";
 import { RiShoppingCart2Line } from "react-icons/ri";
 import { useLoaderData, useParams } from "react-router-dom";
 import { addToStoredProductList, addToStoredProductWishList } from "../utility/addToLS";
+import { useEffect, useState } from "react";
 
 const ProductDetails = () => {
     const { productId } = useParams();
     const data = useLoaderData();
+    console.log(data)
+    const [details, setDetails] = useState({});
 
-    const product = data.find(product => product.product_id == productId);
+    useEffect(() => {
+        const product = data?.find(product => product.product_id == productId);
+        setDetails(product)
+    }, [data, productId])
 
-    console.log(product);
+    console.log(details);
 
     const handeAddToCard = (id) => {
         addToStoredProductList(id);
@@ -30,21 +36,21 @@ const ProductDetails = () => {
             </div>
 
             <div className="w-[1062px] min-h-[00px] absolute left-1/2 -translate-x-1/2 border-2 p-4 bg-white rounded-3xl">
-                {product ? (
+                {details ? (
                     <>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div className="flex justify-center items-center">
-                                <img src={product.product_image} alt={product.product_title} className="  w-full mx-auto my-4" />
+                                <img src={details?.product_image} alt={details?.product_title} className="  w-full mx-auto my-4" />
                             </div>
 
                             <div className="">
-                                <h1 className="text-3xl font-bold">{product.product_title}</h1>
-                                <p className="mt-4 font-semibold text-lg">Price: ${product.price}</p>
-                                <button className="text-lg font-bold border-2 border-green-500 rounded-full bg-[#79bb6147] my-3 px-4 text-[#309C08]">{product.availability ? "In stock" : "Out of stock"}</button>
-                                <p className="text-lg font-medium text-gray-500 my-3">{product.description}</p>
+                                <h1 className="text-3xl font-bold">{details?.product_title}</h1>
+                                <p className="mt-4 font-semibold text-lg">Price: ${details?.price}</p>
+                                <button className="text-lg font-bold border-2 border-green-500 rounded-full bg-[#79bb6147] my-3 px-4 text-[#309C08]">{details?.availability ? "In stock" : "Out of stock"}</button>
+                                <p className="text-lg font-medium text-gray-500 my-3">{details?.description}</p>
                                 <ul className="list-disc list-inside">
                                     <h2 className="font-semibold text-lg mb-3">Specification:</h2>
-                                    {product.specification.map((spec, index) => (
+                                    {details?.specification?.map((spec, index) => (
 
                                         <li className="" key={index}>{spec}</li>
                                     ))}
@@ -62,7 +68,7 @@ const ProductDetails = () => {
                                         <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
                                         <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-100" />
                                     </div>
-                                    <p>{product.rating}</p>
+                                    <p>{details?.rating}</p>
                                 </div>
                                 <div>
                                     <button

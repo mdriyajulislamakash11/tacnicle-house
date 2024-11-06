@@ -17,17 +17,17 @@ const routes = createBrowserRouter([
         {
             path: '/',
             element: <Home />,
-            loader: () => fetch('../categores.json'),
+            loader: () => fetch('/categores.json'),
             children: [
                 {
                     path: '/',
                     element: <ProductCards></ProductCards>,
-                    loader: () => fetch('../products.json'),
+                    loader: () => fetch('/products.json'),
                 },
                 {
                     path: '/category/:category',
                     element: <ProductCards></ProductCards>,
-                    loader: () => fetch('../products.json'),
+                    loader: () => fetch('/products.json'),
                 },
             
             ],
@@ -39,7 +39,7 @@ const routes = createBrowserRouter([
         {
             path: '/dashboard',
             element: <Dashboard>Dashboard</Dashboard>,
-            loader: () => fetch('../products.json')
+            loader: () => fetch('/products.json')
         },
         {
             path: '/reviwe',
@@ -48,7 +48,7 @@ const routes = createBrowserRouter([
         {
             path: '/product/:productId',
             element:<ProductDetails />,
-            loader: () => fetch('/public/products.json')
+            loader: () => fetch('/products.json')
         }
       ]
     }
