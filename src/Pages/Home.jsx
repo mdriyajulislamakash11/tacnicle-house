@@ -1,7 +1,8 @@
-import { Link, Outlet, useLoaderData } from "react-router-dom";
+import { Outlet, useLoaderData } from "react-router-dom";
 import Banner from "../components/Banner";
 import Heading from "../components/Heading";
 import Categories from "../components/Categories";
+import { Helmet } from "react-helmet";
 
 
 const Home = () => {
@@ -10,6 +11,9 @@ const Home = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Gadget | Gadget Heaven</title>
+            </Helmet>
             {/* Banner */}
             <div className="w-11/12 mx-auto rounded-b-2xl" >
                 <div className="">

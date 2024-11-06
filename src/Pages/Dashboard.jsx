@@ -6,6 +6,7 @@ import Cart from '../components/Cart';
 import WishList from '../components/WishList';
 import toast from 'react-hot-toast';
 import SuccessModal from '../components/SuccessModal';
+import { Helmet } from 'react-helmet';
 
 const Dashboard = () => {
     const [activeTab, setActiveTab] = useState("cart");
@@ -72,6 +73,9 @@ const Dashboard = () => {
 
     return (
         <div className="py-8">
+            <Helmet>
+                <title>Dashboard | Gadget Heaven</title>
+            </Helmet>
             <div className="text-center bg-[#9538E2]">
                 <h3 className="text-white font-bold text-3xl py-6">Dashboard</h3>
                 <p className="text-white mb-6">

@@ -1,6 +1,8 @@
 import { useState } from "react";
+import { Helmet } from "react-helmet";
 import toast from "react-hot-toast";
 import { FaStar } from "react-icons/fa";
+
 
 const Review = () => {
     const [reviews, setReviews] = useState([]);
@@ -35,6 +37,9 @@ const Review = () => {
 
     return (
         <div className="review-section py-8 ">
+            <Helmet>
+                <title>Review | Gadget Heaven</title>
+            </Helmet>
 
             <div className="text-center bg-purple-600 py-4 rounded-2xl">
                 <h1 className="text-3xl font-bold text-white mb-4">Share Your Experience with <br /> Gadget Heaven!</h1>
